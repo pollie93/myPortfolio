@@ -1,15 +1,19 @@
 import React from 'react';
 import { Text, Pressable, View } from 'react-native';
+import globalStyles from '../styles/globalStyles';
 
 
 const Inicio = ({navigation}) => {
 
     return (
         <View>
-            <Text>Paula</Text>
+            <Text style={globalStyles.title}>
+                Paula
+            </Text>
+            <Text style={globalStyles.descriptionText}>Hola me llamo Paula Belén Rodriguez</Text>
 
             <Pressable onPress={ () => navigation.navigate("MyGitHub")}>
-                <Text>MyGitHub</Text>
+                <Text style={globalStyles.subtitle}>MyGitHub</Text>
             </Pressable>
         </View>
     );

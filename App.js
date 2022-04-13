@@ -2,7 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Inicio from './views/Inicio';
-import MyGitHub from './views/myGitHub';
+import MyGitHub from './views/MyGitHub';
 
 const Stack = createStackNavigator();
 
