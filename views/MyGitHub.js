@@ -1,9 +1,16 @@
 import React from "react";
-import { Text } from 'react-native';
+import {SafeAreaView, View} from 'react-native';
+import MyPicture from '../components/MyPicture';
 
 const MyGitHub = () => {
     return ( 
-        <Text>Hola</Text>
+        <SafeAreaView>
+            <View>
+                <MyPicture
+                    photo={require('../assets/miFoto.jpg')}
+                />
+            </View>
+        </SafeAreaView>
     ); 
 };
 

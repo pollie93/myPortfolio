@@ -6,13 +6,11 @@ const globalStyles = StyleSheet.create({
         fontSize: 24,
         color: 'blue',
         fontWeight: 'bold',
-        marginVertical: 10
     },
     subtitle: {
-        fontSize: 19,
+        fontSize: 18,
         color: 'black',
         textDecorationLine: 'underline',
-        marginVertical: 15
     },
     descriptionText: {
        color: 'black',

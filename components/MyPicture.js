@@ -6,7 +6,7 @@ const MyPicture = ({photo}) => {
 
     return (
         <View>
-            <Image style={styles.photo} source={photo} />
+            <Image resizeMode='contain' style={styles.photo} source={photo} />
         </View>
     );
 };

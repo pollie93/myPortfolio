@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import Inicio from './views/Inicio';
+import Introduccion from './views/Introduccion';
 import MyGitHub from './views/MyGitHub';
 
 const Stack = createStackNavigator();
@@ -12,8 +12,8 @@ const App = () => {
       <Stack.Navigator>
 
         <Stack.Screen 
-          name="Inicio"
-          component={Inicio}
+          name="Introduccion"
+          component={Introduccion}
         >
           
         </Stack.Screen>
