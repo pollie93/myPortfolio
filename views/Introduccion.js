@@ -13,6 +13,7 @@ const Introduccion = ({navigation}) => {
     const [showKonectaModal, setShowKonectaModal] = useState(false);
 
     const datos = {
+        Fecha: '21/03/1993',
         DNI: 37360800,
         Telefono: 1530178039,
         Email: 'paularodriguez@gmail.com'
@@ -36,7 +37,7 @@ const Introduccion = ({navigation}) => {
             />
             <View style={styles.backgroundDesing}>
                 <Text style={globalStyles.title}>
-                    Yo soy
+                    Paula Belén Rodriguez
                 </Text>
             </View>
 
@@ -45,10 +46,7 @@ const Introduccion = ({navigation}) => {
                 <MyPicture 
                     photo={require('../assets/miFoto.jpg')}
                 />
-                
                 <View>
-                    <Text style={globalStyles.descriptionText}>Paula Belén Rodriguez</Text>
-
                     <ContactMe 
                         datos={datos}
                     />
@@ -59,6 +57,7 @@ const Introduccion = ({navigation}) => {
                 <Text style={globalStyles.descriptionText}>
                     Soy una persona responsable, puntual, autodidácta, comprometida con el trabajo. Tengo una actitud proactiva, con facilidad de adaptación y capacidad de trabajar tanto individualmente como de forma grupal. Mi objetivo es conseguir un resultado óptimo en la labor y área designada. 
                 </Text>
+                
                 <View>
                     <Text style={[globalStyles.subtitle, styles.separator]}>Experiencia Laboral</Text>
                     <Text onPress={() => setShowAsapModal(true)} style={[globalStyles.descriptionText, styles.textClickeable]}>
@@ -100,9 +99,8 @@ const Introduccion = ({navigation}) => {
                         Clases individuales con un desarrollador Ssr.
                     </Text>
                 </View>
-
                 <View>
-                    <Text style={globalStyles.descriptionText}>
+                    <Text style={[globalStyles.descriptionText, globalStyles.subtitle, styles.separator]}>
                         Otros conocimientos
                     </Text>
                     <Text style={globalStyles.descriptionText}>
@@ -136,6 +134,7 @@ const Introduccion = ({navigation}) => {
                     </Text>
                 </View>
             </ScrollView>
+
            <View style={styles.desingViewTouchableOpacity}>
                 <TouchableOpacity 
                     onPress={() => navigation.navigate("MyGitHub")}
@@ -147,12 +146,8 @@ const Introduccion = ({navigation}) => {
                     </Text>
                 </TouchableOpacity>
            </View>
-           
-
-           
         </SafeAreaView>
     );
-
 };
 
 const styles = StyleSheet.create({

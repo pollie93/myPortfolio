@@ -4,8 +4,7 @@ const globalStyles = StyleSheet.create({
     title: {
         textAlign:'center',
         fontSize: 24,
-        color: 'blue',
-        fontWeight: 'bold',
+        color: 'black',
     },
     subtitle: {
         fontSize: 18,

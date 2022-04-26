@@ -14,13 +14,23 @@ const App = () => {
         <Stack.Screen 
           name="Introduccion"
           component={Introduccion}
+          options={{
+            headerStyle: {
+              backgroundColor: '#fff2f3',
+            },
+          }}
         >
           
         </Stack.Screen>
 
         <Stack.Screen 
           name="MyGitHub"
-          component={MyGitHub}       
+          component={MyGitHub}
+          options={{
+            headerStyle: {
+              backgroundColor: '#fff2f3',
+            },
+          }}       
         >
 
         </Stack.Screen>
